@@ -99,7 +99,7 @@ real_coef = real_omp.coef_
 m = 1
 n = 1000
 x = np.linspace(0,m,n)
-y = 8*np.cos(2*np.pi*20*x) + 8*np.sin(2*np.pi*5*x) + 8*np.sin(2*np.pi*10*x)
+y = 8*np.cos(2*np.pi*20*x) + 16*np.sin(2*np.pi*5*x) + 8*np.sin(2*np.pi*10*x)
 e_f = n/m 
 
 random.seed(1)

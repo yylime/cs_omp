@@ -32,9 +32,10 @@ def cs_omp(y,D,k):
     #得到输入的长度
     M,N = D.shape
     #待恢复的稀疏信号
-    theta = np.zeros((N,1))
+    #修改为复数后表示的恢复的稀疏信号的幅度有问题==
+    theta = np.zeros((N,1),dtype=np.complex)
     #迭代过程中存储被选择D的列
-    Dt = np.zeros((M,t))
+    Dt = np.zeros((M,t),dtype=np.complex)
     #保存选择D的列的序号
     pos_theta = [] 
     #定义残差
